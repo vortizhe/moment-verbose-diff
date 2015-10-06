@@ -28,6 +28,11 @@
       hDiff--;
     }
 
+    if (hDiff < 0) {
+      hDiff = 60 + hDiff;
+      dDiff--;
+    }
+
     return {
       "days": dDiff,
       "hours": hDiff,
